@@ -26,9 +26,10 @@
 ```css
 @import url('https://raw.githubusercontent.com/declider/shiki-light-mini/master/shiki-light-theme.css');
 ```
-и сохранить.
+и сохранить. Это рекомендованный способ.
 
-Если нужно что-то подредактировать - весь css тут есть, вместо импорта копируете всё содержимое css файла.
+
+Но если нужно что-то подредактировать - весь css тут есть, вместо импорта копируете всё содержимое css файла.
 
 # Примеры:
 ![Поиск аниме](https://github.com/declider/shiki-light-mini/blob/master/examples/1.png?raw=true)
