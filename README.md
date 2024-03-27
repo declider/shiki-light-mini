@@ -30,6 +30,14 @@
 
 Если нужно что-то подредактировать - весь css тут есть, вместо импорта копируете всё содержимое css файла.
 
+# Примеры:
+![Поиск аниме](https://github.com/declider/shiki-light-mini/blob/master/examples/1.png?raw=true)
+![Страница аниме 1](https://github.com/declider/shiki-light-mini/blob/master/examples/2.png?raw=true)
+![Страница аниме 2](https://github.com/declider/shiki-light-mini/blob/master/examples/3.png?raw=true)
+![Просмотренное плитка](https://github.com/declider/shiki-light-mini/blob/master/examples/4.png?raw=true)
+![Просмотренное список](https://github.com/declider/shiki-light-mini/blob/master/examples/5.png?raw=true)
+![Профиль](https://github.com/declider/shiki-light-mini/blob/master/examples/6.png?raw=true)
+
 # Баги которые когда-нибудь да будут пофикшены:
 - На главной странице иногда проскакивают плохие цвета.
 - Кое-где остался заголовок "комментарии" хотя сами комментарии не отображаются.
