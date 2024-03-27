@@ -1,36 +1,12 @@
-@font-face {
-  font-family: 'FontAwesome';
-  src: url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?v=4.7.0');
-  src: url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'),
-       url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'),
-       url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'),
-       url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'),
-       url('//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'Material Icons';
-  font-style: normal;
-  font-weight: 400;
-  src: local("Material Icons"), local("MaterialIcons-Regular"), url(https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/MaterialIcons-Regular.woff2) format("woff2"), url(https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/MaterialIcons-Regular.woff) format("woff"), url(https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/MaterialIcons-Regular.eot) format("eot"), url(https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/MaterialIcons-Regular.ttf) format("truetype");
-} 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
-/* sticky_menu */
-@media screen and (min-width: 1025px) {
-  .l-top_menu-v2 { 
-      position: sticky; top: 0;}
-  .l-top_menu-v2 .active .submenu {
-      max-height: calc(100vh - 46px);
-      overflow: auto;}
-}
 /*цвет фона*/
 body { 
     background: #fff;
 }
 /* Цвет текста ссылки по умолчанию */
-a{
-    color:#5b9ccc;
+a {
+    color: #5b9ccc;
 }
 /* Цвет ссылки при наведении */
 a:hover {
@@ -66,7 +42,6 @@ a:active {
 .b-db_entry > .c-about .additional-links .line-container > .link,
 .b-db_entry > .c-about .additional-links .line-container > a,
 .b-dialog > .inner header .name-date a.name,
-.b-feedback-inner .about a,
 .b-form .variants .variant a,
 .b-form .cancel,
 .b-forums .forum .link-with-input .link,
@@ -174,6 +149,7 @@ header.head h1 a.back::before,
 header.head h2 a.back::before,
 .b-form a.remove,
 .b-list_switchers .switcher,
+.b-show_more, .b-show_more-more,
 .b-link,.b-oauth_application .name-logo .name{
     color:#5b9ccc !important;
     border-bottom-color:none !important;
@@ -193,7 +169,6 @@ header.head h2 a.back::before,
 .b-db_entry > .c-about .additional-links .line-container > .link:hover,
 .b-db_entry > .c-about .additional-links .line-container > a:hover,
 .b-dialog > .inner header .name-date a.name:hover,
-.b-feedback-inner .about a:hover,
 .b-form .variants .variant a:hover,
 .b-header_filters .filter-line a:hover,
 .b-height_shortener .expand:hover,
@@ -715,7 +690,7 @@ div.history .b-block_list li .tooltip-inner a:active,
 }
 .b-comments-notifier {
     border-radius: 1rem;
-    background: #70aade; !important;
+    background: #70aade !important;
     color: #e3f0fb;
 }
 .b-comments-notifier:hover {
@@ -785,7 +760,7 @@ body[data-locale="en"] .b-spoiler .content .after:before {
     padding: 0 .42rem;
     text-align: center;
     line-height: 21px;
-    font-weight: bold;
+    font-weight: 500;
     border-radius: 1rem;
     background: #e3f0fb;
     color: #70aade;
@@ -833,7 +808,6 @@ body[data-locale="en"] .b-spoiler .content .after:before {
 }
 .b-quote .quoteable:before {
     content: '\\_f10d';
-    font: normal normal normal 14px/1 FontAwesome;
     font-size: inherit;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
@@ -846,7 +820,7 @@ body[data-locale="en"] .b-spoiler .content .after:before {
     font-size:12px;
 }
 .b-quote .quoteable .b-user16 span{
-    font-weight:bold;
+    font-weight: 500;
 }
 @media screen and (max-width: 720px){
   .b-quote {
@@ -976,45 +950,6 @@ select{
 .l-page .menu-toggler .toggler:after{
     color: #70aade;
 }
-/*сообщить об ошибке*/
-.b-feedback>.marker-positioner>.marker-text,.b-feedback>.marker-positioner>.marker-text:after,.b-feedback>.hover-activator {
-    display:none;
-}
-.b-feedback > .marker-positioner::after {
-    position: absolute;
-    font-family: 'Material Icons';
-    content: 'error_outline';
-    font-size: 30px;
-    padding: 5px;
-    top: 0;
-    width: 130px;
-    height: 30px;
-    left: -99px;
-    text-align: right;
-    z-index: 20;
-    background-color: #e3f0fb;
-    color: #70aade;
-    border-radius:5px;
-}
-.b-feedback > .marker-positioner:hover::after{
-    left: 0;
-    text-decoration: none !important;
-    background-color: #e3f0fb;
-    font-family:inherit;
-    font-size:18px;
-    color: #fc575e;
-    background: #fedddf;
-    text-align:center;
-}
-body[data-locale="ru"] .b-feedback > .marker-positioner:hover::after{
-  	content:"Сообщить об ошибке";
-  	height: 40px;
-}
-body[data-locale="en"] .b-feedback > .marker-positioner:hover::after{
-  	content:"Report a bug";
-    height: 25px;
-    padding-top: 10px;
-}
 /*тултипы*/
 .tooltip-inner{
     border: 1px solid #e3f0fb;
@@ -1026,7 +961,6 @@ body[data-locale="en"] .b-feedback > .marker-positioner:hover::after{
 }
 /*стрелочка*/
 .tooltip-arrow:before,.tooltip-left .tooltip-arrow:before {
-    font: normal normal normal 14px/1 FontAwesome;
     text-rendering: auto;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
@@ -1063,7 +997,7 @@ body[data-locale="en"] .b-feedback > .marker-positioner:hover::after{
     display:none;
 }
 .p-profiles-show .lifetime .times .time.checked {
-    font-weight: bold;
+    font-weight: 500;
 }
 
 /*активность*/
@@ -1227,7 +1161,7 @@ input[type=checkbox]:checked:disabled,.b-input input[type=checkbox]:checked:disa
 }
 .p-animes_collection-index .pagination .no-hover .link-current:not(.active), .p-mangas_collection-index .pagination .no-hover .link-current:not(.active), .p-recommendations-index .pagination .no-hover .link-current:not(.active), .p-userlist_comparer-show .pagination .no-hover .link-current:not(.active) {
     border-bottom: none;
-    border:2px solid #bbcbd8;
+    /* border:2px solid #bbcbd8; */
     border-radius:5px;
 }
 .pagination .no-hover span.link-title,.pagination .no-hover span:nth-child(3){
@@ -1379,4 +1313,138 @@ h3 {
       text-align: left;}
     .l-footer {
       padding-top: 28px;}
+}
+
+
+/* ------------------------ */
+.legend,
+.forum,
+.mail,
+.icon-mail,
+.icon-achievements,
+.icon-clubs,
+.icon-site-rules,
+/*.menu-dropdown.main,*/
+.b-reviews_navigation,
+.b-comments,
+.l-footer,
+.b-source,
+.b-feedback,
+.medal,
+.b-comments-notifier,
+/* .profile-content, */
+.new_comment,
+.new_review,
+.new_critique,
+.b-subposter-action.edit,
+.tooltip-arrow,
+.forum-container,
+.watch-online,
+.c-column.c-left:has(.b-stats_bar),
+.head.misc.is-own-profile,
+.profile-content > div > div.c-column.c-right > div.cc-2a.m30,
+div[data-dynamic='topic'],
+.menu-dropdown.main .submenu>a:nth-child(n+5),
+#user_rates_index .menu-slide-outer.x199 aside,
+.subheadline:has(a[title="Все комментарии"]) {
+    display: none !important;
+}
+
+.info .key,
+.headline,
+.midheadline,
+.subheadline,
+.title,
+.b-table th,
+.stat-value,
+.name,
+.status-name,
+.subheadline-buttons,
+.pagination a,
+.b-catalog_entry-tooltip .inner a.name,
+.b-db_entry-variant-list_item>.info .name .b-link {
+    font-weight: 500 !important;
+}
+
+#user_rates_index .l-content {
+	margin-right: 0 !important;
+  	width: 100% !important;
+}
+
+.cc.block {
+    margin-bottom: 5px;
+}
+
+.b-image img,
+.video-link,
+.b-video.shrinked-1_3 .video-link img {
+    border-radius: 4px;
+}
+
+.b-db_entry-variant-list_item .image img,
+.b-catalog_entry .cover .image-decor img {
+    max-width: 100%;
+    width: auto;
+    height: auto;
+}
+
+.b-options-floated {
+    font-size: 13px;
+    margin-bottom: 10px !important;
+}
+
+.p-profiles-show.x1200 .profile-content .c-right {
+    width: 100%;
+}
+
+.cc-favourites > article {
+    width: auto;
+    margin-inline: 1% !important;
+}
+
+.cc-favourites.is-own-profile > article {
+    width: auto !important;
+}
+
+.cc-favourites {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.p-profiles-show .cc-favourites {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+article::after,
+.cc-favourites::after,
+span.submenu-triangle::before,
+.submenu a::before {
+    content: none !important;
+}
+
+span.submenu-triangle>span,
+.submenu {
+  margin-left: 0 !important;
+}
+
+.submenu a {
+  padding-right: 0px;
+  padding-left: 10px;
+}
+
+h1,
+.title {
+    color:#5b9ccc !important;
+}
+
+:root {
+  --top-menu-height: 40px !important;
+}
+
+* {
+    font-family: 'Roboto', sans-serif !important;
+    -webkit-font-smoothing : none !important;
+    font-smooth: never !important;
 }
