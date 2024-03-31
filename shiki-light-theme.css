@@ -1324,7 +1324,6 @@ h3 {
 .icon-achievements,
 .icon-clubs,
 .icon-site-rules,
-/*.menu-dropdown.main,*/
 .b-reviews_navigation,
 .b-comments,
 .l-footer,
@@ -1332,12 +1331,15 @@ h3 {
 .b-feedback,
 .medal,
 .b-comments-notifier,
-/* .profile-content, */
+.profile-actions,
+.compatibility,
+.notice,
 .new_comment,
 .new_review,
 .new_critique,
 .b-subposter-action.edit,
 .tooltip-arrow,
+.logo-container,
 .forum-container,
 .watch-online,
 .c-column.c-left:has(.b-stats_bar),
@@ -1394,6 +1396,8 @@ b,
     max-width: 100%;
     width: auto;
     height: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .b-options-floated {
@@ -1430,7 +1434,8 @@ b,
 article::after,
 .cc-favourites::after,
 span.submenu-triangle::before,
-.submenu a::before {
+.submenu a::before,
+.aliases::after {
     content: none !important;
 }
 
@@ -1447,6 +1452,44 @@ span.submenu-triangle>span,
 h1,
 .title {
     color:#5b9ccc !important;
+}
+
+
+.list-posters.cc-5 {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    grid-template-rows: repeat(auto-fit, minmax(0, 1fr));
+    grid-gap: 10px;
+}
+
+
+.c-column.user_rate {
+    width: auto !important;
+    margin-right: 0 !important;
+    display: inline-grid;
+    justify-content: center;
+}
+
+.b-catalog_entry.cover.misc {
+    justify-content: center !important;
+    gap: 30px !important;
+    text-align: center;
+}
+
+.title.left_aligned {
+    text-align: center;
+    margin-inline: auto;
+}
+
+.b-catalog_entry.cover.title {
+    width: auto;
+    text-overflow: unset;
+    text-align: center;
+}
+
+.image-cutter {
+    display: flex !important;
+    justify-content: center !important;
 }
 
 :root {
