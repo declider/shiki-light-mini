@@ -893,7 +893,7 @@ select{
 .buttons .editor-file{
     padding:2px !important;}
 }
-.b-subposter-action,.item-sign:before,.item-add,.item-minus,.item-edit:before,.item-mobile.selected{
+.item-sign:before,.item-add,.item-minus,.item-edit:before,.item-mobile.selected{
     color: #4682b4 !important;
 }
 .buttons .editor-smiley:hover,.buttons .editor-quote:hover,.buttons .editor-link:hover,.buttons .editor-bold:hover,.buttons .editor-italic:hover,
@@ -1467,6 +1467,18 @@ h1,
 
 #user_rates_index .b-options-floated.mylist.mobile-desktop {
 	justify-content: space-around !important;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: none;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #5c6367;
 }
 
 :root {
