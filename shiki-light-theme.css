@@ -1342,17 +1342,49 @@ h3 {
 .logo-container,
 .forum-container,
 .watch-online,
+.search-marker,
 .c-column.c-left:has(.b-stats_bar),
 .head.misc.is-own-profile,
 .profile-content > div > div.c-column.c-right > div.cc-2a.m30,
 div[data-dynamic='topic'],
 .menu-dropdown.main .submenu>a:nth-child(n+5),
-#user_rates_index .menu-slide-outer.x199 aside,
-#animes_show .menu-slide-outer.x199 aside,
-#mangas_show .menu-slide-outer.x199 aside,
-#ranobe_show .menu-slide-outer.x199 aside,
 .subheadline:has(a[title="Все комментарии"]) {
     display: none !important;
+}
+
+:is(
+	#ranobe_show,
+	#user_rates_index,
+	#animes_show,
+	#mangas_show,
+	#characters_show,
+	#people_show,
+	#animes_chronology,
+	#mangas_chronology,
+	#ranobe_chronology,
+    #animes_related,
+    #mangas_related,
+    #ranobe_related
+) .menu-slide-outer.x199 aside {
+	display: none !important
+}
+
+:is(
+	#ranobe_show,
+	#user_rates_index,
+	#animes_show,
+	#mangas_show,
+	#characters_show,
+	#people_show,
+	#animes_chronology,
+	#mangas_chronology,
+	#ranobe_chronology,
+    #animes_related,
+    #mangas_related,
+    #ranobe_related
+) .l-content {
+	margin-right: 0 !important;
+  	width: 100% !important;
 }
 
 strong,
@@ -1373,20 +1405,21 @@ b,
     font-weight: 500 !important;
 }
 
-#user_rates_index .l-content,
-#animes_show .l-content,
-#ranobe_show .l-content,
-#mangas_show .l-content {
-	margin-right: 0 !important;
-  	width: 100% !important;
-}
-
 .cc.block {
     margin-bottom: 5px;
 }
 
 img {
     border-radius: 4px;
+}
+
+.b-spoiler_block>span {
+  border-radius: 7px;
+}
+
+.b-spoiler_block>div {
+  border-radius: 7px;
+  margin-top: 10px;
 }
 
 .b-options-floated {
@@ -1398,32 +1431,16 @@ img {
     width: 100%;
 }
 
-.cc-favourites > article {
-    width: auto;
-    margin-inline: 1% !important;
-    flex-grow: 1;
-}
-
-.cc-favourites.is-own-profile > article {
-    width: auto !important;
-}
-
-.cc-favourites {
-    display: flex;
-    justify-content: start;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
 .p-profiles-show .cc-favourites {
     margin-right: 0;
     margin-left: 0;
 }
 
 article::after,
-.cc-favourites::after,
 span.submenu-triangle::before,
 .submenu a::before,
+.is-own-profile .b-options-floated a:after,
+.is-own-profile .b-options-floated .link:after,
 .aliases::after {
     content: none !important;
 }
@@ -1446,6 +1463,10 @@ h1,
 .image-cutter {
     display: flex !important;
     justify-content: center !important;
+}
+
+#user_rates_index .b-options-floated.mylist.mobile-desktop {
+	justify-content: space-around !important;
 }
 
 :root {
