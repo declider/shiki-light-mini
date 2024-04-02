@@ -1439,8 +1439,8 @@ img {
 article::after,
 span.submenu-triangle::before,
 .submenu a::before,
-.is-own-profile .b-options-floated a:after,
-.is-own-profile .b-options-floated .link:after,
+.is-own-profile .menu-slide-outer.x199 .b-options-floated a:after,
+.is-own-profile .menu-slide-outer.x199 .b-options-floated .link:after,
 .aliases::after {
     content: none !important;
 }
