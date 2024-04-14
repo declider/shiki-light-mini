@@ -1343,6 +1343,7 @@ h3 {
 .forum-container,
 .watch-online,
 .search-marker,
+.additional-links,
 .c-column.c-left:has(.b-stats_bar),
 .head.misc.is-own-profile,
 .profile-content > div > div.c-column.c-right > div.cc-2a.m30,
@@ -1397,6 +1398,7 @@ b,
 .b-table th,
 .stat-value,
 .name,
+.b-subposter-action,
 .status-name,
 .subheadline-buttons,
 .pagination a,
@@ -1436,6 +1438,10 @@ img {
     margin-left: 0;
 }
 
+.b-db_entry>.c-about .c-info-left:last-child, .b-db_entry>.c-about .c-info-right:last-child {
+  margin-bottom: 10px !important;
+}
+
 article::after,
 span.submenu-triangle::before,
 .submenu a::before,
@@ -1463,6 +1469,19 @@ h1,
 .image-cutter {
     display: flex !important;
     justify-content: center !important;
+}
+
+.b-subposter-actions {
+  justify-content: center;
+  gap: 5%;
+}
+
+.b-subposter-action {
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  font-size: 15px;
+  width: fit-content !important;
 }
 
 #user_rates_index .b-options-floated.mylist.mobile-desktop {
