@@ -1365,7 +1365,11 @@ div[data-dynamic='topic'],
 	#ranobe_chronology,
     #animes_related,
     #mangas_related,
-    #ranobe_related
+    #ranobe_related,
+    #animes_screenshots,
+    #animes_similar,
+    #mangas_similar,
+    #ranobe_similar
 ) .menu-slide-outer.x199 aside {
 	display: none !important
 }
@@ -1382,7 +1386,11 @@ div[data-dynamic='topic'],
 	#ranobe_chronology,
     #animes_related,
     #mangas_related,
-    #ranobe_related
+    #ranobe_related,
+    #animes_screenshots,
+    #animes_similar,
+    #mangas_similar,
+    #ranobe_similar
 ) .l-content {
 	margin-right: 0 !important;
   	width: 100% !important;
@@ -1484,8 +1492,21 @@ h1,
   width: fit-content !important;
 }
 
+#people_show .c-description:has(.c-works) {
+    margin-left: 0;
+}
+
+#people_show .c-works {
+    display: flex;
+    justify-content: space-between;
+}
+
 #user_rates_index .b-options-floated.mylist.mobile-desktop {
 	justify-content: space-around !important;
+}
+
+.avatar > img, .submenu-triangle > img {
+    border-radius: 4px !important; 
 }
 
 ::-webkit-scrollbar {
