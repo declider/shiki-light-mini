@@ -1349,51 +1349,10 @@ h3 {
 .profile-content > div > div.c-column.c-right > div.cc-2a.m30,
 div[data-dynamic='topic'],
 .menu-dropdown.main .submenu>a:nth-child(n+5),
-.subheadline:has(a[title="Все комментарии"]) {
+.subheadline:has(a[title="Все комментарии"]),
+.block2:has(.content-updates),
+.l-menu:has(.b-animes-menu) {
     display: none !important;
-}
-
-:is(
-	#ranobe_show,
-	#user_rates_index,
-	#animes_show,
-	#mangas_show,
-	#characters_show,
-	#people_show,
-	#animes_chronology,
-	#mangas_chronology,
-	#ranobe_chronology,
-    #animes_related,
-    #mangas_related,
-    #ranobe_related,
-    #animes_screenshots,
-    #animes_similar,
-    #mangas_similar,
-    #ranobe_similar
-) .menu-slide-outer.x199 aside {
-	display: none !important
-}
-
-:is(
-	#ranobe_show,
-	#user_rates_index,
-	#animes_show,
-	#mangas_show,
-	#characters_show,
-	#people_show,
-	#animes_chronology,
-	#mangas_chronology,
-	#ranobe_chronology,
-    #animes_related,
-    #mangas_related,
-    #ranobe_related,
-    #animes_screenshots,
-    #animes_similar,
-    #mangas_similar,
-    #ranobe_similar
-) .l-content {
-	margin-right: 0 !important;
-  	width: 100% !important;
 }
 
 strong,
@@ -1437,7 +1396,8 @@ img {
     margin-bottom: 10px !important;
 }
 
-.p-profiles-show.x1200 .profile-content .c-right {
+.p-profiles-show.x1200 .profile-content .c-right,
+.l-content:has(~ .l-menu .b-animes-menu) {
     width: 100%;
 }
 
